@@ -1,0 +1,44 @@
+/*
+Jissell's first self made code
+*/
+
+#include <Rainbowduino.h>
+
+void setup() 
+{
+  Rb.init();// initialize Rainbowduino
+}
+
+unsigned char x,y,z;
+
+void loop() 
+{
+    Rb.drawChar(1000010, 0, 1, 0xFF66FF); //draw the letter J
+    delay(1000);
+    Rb. blankDisplay();
+    
+    Rb.drawChar(1000009, 0, 1, 0xFF66CC); //draw the letter I
+    delay(1000);
+    Rb. blankDisplay(); //make led's blank
+    
+    Rb.drawChar(1000019, 0, 1, 0xFF6699); //draw the letter S
+    delay(1000);
+    Rb. blankDisplay(); //make led's blank
+    
+    Rb.drawChar(1000019, 0, 1, 0xFF6666); //draw the letter S
+    delay(1000);
+    Rb. blankDisplay(); //make led's blank
+    
+    Rb.drawChar(1000005, 0, 1, 0xFF6633); //draw the letter E
+    delay(1000);
+    Rb. blankDisplay(); //make led's blank
+    
+    Rb.drawChar(1000012, 0, 1, 0xFF6600); //draw the letter L
+    delay(1000);
+    Rb. blankDisplay(); //make led's blank
+    
+    Rb.drawChar(1000012, 0, 1, 0xFF33FF); //draw the letter L
+    delay(1000);
+    Rb. blankDisplay(); //make led's blank
+    
+}
