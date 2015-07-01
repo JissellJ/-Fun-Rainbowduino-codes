@@ -1,0 +1,45 @@
+
+#include <Rainbowduino.h>
+
+#define trig A3
+#define echo A2
+long duration, distance;
+
+void setup() {
+  Rb.init();
+  pinMode(trig, OUTPUT);
+  pinMode(echo, INPUT);
+  Serial.begin(9600);
+  
+  
+}
+  // put your setup code here, to run once:
+
+void loop() {
+  
+  digitalWrite(trig, LOW) ;
+  delayMicroseconds(2);
+  
+  digitalWrite(trig, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trig, LOW);
+  
+  duration = pulseIn(echo, HIGH);
+  distance = duration/58;
+  
+  Serial.println(distance);
+  
+ 
+  if (distance <  50){
+     Rb.blankDisplay();
+     Rb.drawHorizontalLine(4, 0, 4,0xCC0000) ; // draw a horizontal line from (0,0) of length 4 pixels
+     
+     
+  }else{
+    Rb.blankDisplay();
+    Rb.drawLine(0, 0, 7, 7, 0x00FF00); // draw a line from (0,0) to (7,7).
+  }
+  //Serial.println("end");
+   
+    
+}
