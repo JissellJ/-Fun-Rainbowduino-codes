@@ -1,0 +1,41 @@
+#include <Rainbowduino.h>
+
+void setup() {
+ Rb.init(); // initialize rainbowduino
+
+}
+
+void loop() {
+     Rb.fillRectangle(0, 0, 8, 8, random(0xFFFFFF)); // draw a filled rectangle line from (0,0) of length and width 8 pixels
+     delay(1000);
+     Rb.blankDisplay(); // make led's blank
+     
+     Rb.fillRectangle(0, 0, 7, 7, random(0xFFFFFF)); // draw a filled rectangle line from (0,0) of length and width 7 pixels
+     delay(1000);
+     Rb.blankDisplay(); // make led's blank
+     
+     Rb.fillRectangle(0, 0, 6, 6, random(0xFFFFFF)); // draw a filled rectangle line from (0,0) of length and width 6 pixels
+     delay(1000);
+     Rb.blankDisplay(); // make led's blank
+     
+     Rb.fillRectangle(0, 0, 5, 5, random(0xFFFFFF)); // draw a filled rectangle line from (0,0) of length and width 5 pixels
+     delay(1000);
+     Rb.blankDisplay(); // make led's blank
+     
+     Rb.fillRectangle(0, 0, 4, 4, random(0xFFFFFF)); // draw a filled rectangle line from (0,0) of length and width 4 pixels
+     delay(1000);
+     Rb.blankDisplay(); // make led's blank
+     
+     Rb.fillRectangle(0, 0, 3, 3, random(0xFFFFFF)); // draw a filled rectangle line from (0,0) of length and width 3 pixels
+     delay(1000);
+     Rb.blankDisplay(); // make led's blank
+     
+     Rb.fillRectangle(0, 0, 2, 2, random(0xFFFFFF)); // draw a filled rectangle line from (0,0) of length and width 3 pixels
+     delay(1000);
+     Rb.blankDisplay(); // make led's blank
+     
+     Rb.fillRectangle(0, 0, 1, 1, random(0xFFFFFF)); // draw a filled rectangle line from (0,0) of length and width 1 pixels
+     delay(1000);
+     Rb.blankDisplay(); // make led's blank
+
+}
